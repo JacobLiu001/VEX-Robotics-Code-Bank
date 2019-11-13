@@ -1,3 +1,8 @@
+/*
+ * This is a single-joystick control program for CLAWBOT with Thresholds
+ * Author: JacobLiu001
+ * Date: 13 Nov. 2019
+ */
 #pragma config(Sensor, dgtl1,  touchSensor,    sensorTouch)
 #pragma config(Motor,  port1,           leftMotor,     tmotorVex393_HBridge, openLoop, reversed, driveLeft)
 #pragma config(Motor,  port6,           clawMotor,     tmotorVex393_MC29, openLoop)
