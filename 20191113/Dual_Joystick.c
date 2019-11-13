@@ -23,7 +23,7 @@ task main() {
 		if (abs(x2) <= 5) x2 = 0;
 		if (abs(y1) <= 5) y1 = 0;
 		if (abs(y2) <= 5) y2 = 0;
-		px = (x2 + y1) >> 1;
+		px = (x2 + y1) >> 1; // a >> 1 is equivalent to a / 2
 		py = (-x2 + y1) >> 1;
 		motor[leftMotor] = px;
 		motor[rightMotor] = py;
