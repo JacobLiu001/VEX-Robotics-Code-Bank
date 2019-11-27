@@ -1,7 +1,8 @@
 /*
  * UltraSonicSensor002.c
  * Enables a filtered reading of the ultrasonic sensor (cm) through the getX() function
- *
+ * Author: JacobLiu001
+ * Date: 27 Nov. 2019
  */
 #pragma config(Sensor, dgtl1,  touchSensor,    sensorTouch)
 #pragma config(Sensor, dgtl7,  ultraSensor,    sensorSONAR_cm)
