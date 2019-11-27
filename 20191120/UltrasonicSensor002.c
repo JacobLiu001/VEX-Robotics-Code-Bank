@@ -1,5 +1,4 @@
-/*
- * UltraSonicSensor002.c
+/* UltraSonicSensor002.c
  * Enables a filtered reading of the ultrasonic sensor (cm) through the getX() function
  * Author: JacobLiu001
  * Date: 27 Nov. 2019
