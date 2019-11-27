@@ -1,3 +1,8 @@
+/* UltraSonicSensor002.c
+ * Enables a filtered reading of the ultrasonic sensor (cm) through the getX() function
+ * Author: JacobLiu001
+ * Date: 27 Nov. 2019
+ */
 #pragma config(Sensor, dgtl1,  touchSensor,    sensorTouch)
 #pragma config(Sensor, dgtl7,  ultraSensor,    sensorSONAR_cm)
 #pragma config(Motor,  port1,           leftMotor,     tmotorVex393_HBridge, openLoop, reversed, driveLeft)
@@ -19,7 +24,7 @@ task main() {
 	bool reverse = false;
 	while (true) {
 		int dis = getX();
-		if (dis > 50) {
+		if (dis > 60) {
 			reverse = false;
 		} else if (dis < 20) {
 			reverse = true;
@@ -29,8 +34,8 @@ task main() {
 		} else {
 			motor[leftMotor] = motor[rightMotor] = 127;
 		}
-		bool v8l = (bool)(vexRT[Btn8L]);
-		bool v8u = (bool)(vexRT[Btn8U]);
+		bool v8l = vexRT[Btn8L];
+		bool v8u = vexRT[Btn8U];
 		if (v8u && !v8l) {
 			stopAllMotors();
 			wait10Msec(1);
