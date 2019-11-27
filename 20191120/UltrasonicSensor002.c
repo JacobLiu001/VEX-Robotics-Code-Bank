@@ -1,3 +1,8 @@
+/*
+ * UltraSonicSensor002.c
+ * Enables a filtered reading of the ultrasonic sensor (cm) through the getX() function
+ *
+ */
 #pragma config(Sensor, dgtl1,  touchSensor,    sensorTouch)
 #pragma config(Sensor, dgtl7,  ultraSensor,    sensorSONAR_cm)
 #pragma config(Motor,  port1,           leftMotor,     tmotorVex393_HBridge, openLoop, reversed, driveLeft)
